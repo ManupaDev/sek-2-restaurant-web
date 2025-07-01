@@ -123,15 +123,253 @@ nav {
   }
 }
 
-.our-story {
-  display: grid;
-  /* display: flex; */
-  grid-template-columns: 1fr 1fr;
-  /* column-gap: 16px; */
 
-  div {
-    width: 50%;
-    padding: 30px;
-    border: 1px solid red;
+.story-section {
+  display: flex;
+  margin-top: 100px;
+  height: 600px;
+}
+
+.story-imagediv {
+  width: 50%;
+}
+
+.story-text {
+  background-color: #F6F6F6;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-div {
+  font-family: "Open Sans";
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-div h1 {
+  font-size: 38px;
+  font-weight: 400;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.line {
+  border: 2px solid #d43031;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 20%;
+}
+
+.text-div p {
+  color: #777;
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+
+.story-imagediv img {
+  width: 120%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .story-section {
+      flex-direction: column;
+      height: auto;
+      width: auto;
   }
+
+  .story-imagediv {
+      width: 100%;
+  }
+
+  .story-imagediv img {
+      width: 100%;
+      height: auto;
+  }
+
+  .story-text {
+      width: 100%;
+      padding: 20px;
+  }
+
+  .text-div h1 {
+      font-size: 40px;
+      font-weight: 300;
+      text-align: left;
+  }
+
+  .text-div{
+      text-align: left;
+      justify-content: left;
+      float: left;
+      margin-left: 0;
+  }
+
+  br{
+      display: none;
+  }
+
+  .line {
+      width: 30%;
+  }
+
+  .contact-us-section-bottom{
+      position: relative;
+      height: 500px;
+  }
+
+  .contact-us-section .card1{
+      position: absolute;
+      left: 0px;
+      right: 80px;
+      width: 250px;
+  }
+  
+  .contact-us-section .card2{
+      position: absolute;
+      top: 180px;
+      left: 0px;
+      right: 10px;;
+      width: 250px;
+  }
+
+  .contact-us-section .card3{
+     position: absolute;
+      right: 50px;
+      left:   0px;
+      top: 350px;
+      width: 250px;
+  }
+
+  .menu-images-section{
+      position: relative;
+  }
+
+  .image-item .item_1 , .item_3{
+      position: absolute;
+      top: 240px;
+  } 
+
+   .image-item .item_1 , .item_4{
+      position: absolute;
+      top: 240px;
+      left: 380px;
+  }
+
+  .image-item img{
+      width: 300px;
+  }
+
+}
+
+.menu-section{
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+}
+
+.menu-section .text-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7%;
+  font-size: 38px;
+  margin-bottom: 30px;
+  font-family: "Open Sans";
+}
+
+.menu-line {
+  border: 1px solid #d43031;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 5%;
+}
+
+.menu-container{
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+
+.menu-container .menuText >h1{
+  font-size: 32px;
+  color: #444444;
+  font-family: "Open Sans";
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.menu-section .menuText{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.menu-container .menuText .menu-line{
+  width: 9%;
+  border: 2px solid #d43031;
+  margin-top: 15px;
+}
+
+.menu-item{
+  box-sizing: border-box;
+  display: block;
+  margin: 45px 0 45px 0;
+  line-height: 25px;
+}
+
+.menu-name{
+  display: block;
+  font-size: 20px;
+  font-family: "Open Sans", serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.menu-description{
+  display: block;
+  font-size: 15px;
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  color: #777777;
+}
+.menu-price{
+  display: block;
+  font-size: 20px;
+  float: right;
+  font-family: "Open Sans", serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: -36px;
+  color: #555555;
+  margin-right: 150px;
+
+}
+.menu-left{
+  width: 50%;
+  padding: 0 15px 0 15px;
+}
+
+.menu-right{
+  width: 50%;
+  padding: 0 15px 0 15px;
+}
+
+.menu-images-section{
+  width:100%;
+  margin-top: 90px;
+}
+
+.menu-images-section .row{
+  display: flex;
+}
+.image-item img{
+  width: 380px;
+  height: 240px;
 }
