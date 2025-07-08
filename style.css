@@ -15,10 +15,14 @@ nav {
   justify-content: center;
   padding: 10px 0;
   background-color: #262626;
-  
+
   position: fixed;
   left: 0;
   right: 0;
+
+  h1 {
+    display: none;
+  }
 
   ul {
     list-style: none;
@@ -32,6 +36,32 @@ nav {
         font-family: "Open Sans";
         color: #eeeeee;
       }
+    }
+  }
+  svg {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  nav {
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    h1 {
+      display: block;
+      color: white;
+      font-family: "Rochester", cursive;
+    }
+    ul {
+      display: none;
+    }
+
+    svg {
+      display: block;
+      width: 24px;
+      height: 24px;
+      color: white;
     }
   }
 }
@@ -60,6 +90,17 @@ nav {
       font-size: 24px;
       font-weight: 400;
       margin-top: 150px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero {
+    .hero__content {
+      h1 {
+        font-size: 5em;
+        text-align: center;
+      }
     }
   }
 }
@@ -128,6 +169,20 @@ nav {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .specials {
+    padding: 60px 16px;
+    .specials__content {
+      margin-top: 64px;
+      flex-direction: column;
+      row-gap: 32px;
+      .specials__content-card {
+        width: 100%;
+      }
+    }
+  }
+}
+
 .our-story {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -171,6 +226,18 @@ nav {
       font-size: 16px;
       color: #777;
       margin-top: 70px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .our-story {
+    grid-template-columns: 1fr;
+    .our-story__content {
+      padding: 0 16px;
+      .our-story__heading {
+        margin-top: 16px;
+      }
     }
   }
 }
@@ -272,28 +339,18 @@ nav {
   }
 }
 
-.demo {
-  height: 500px;
-  border: 2px solid red;
-  margin-bottom: 32px;
-  
-  /* position: relative; */
-  
-  div {
-    width: 200px;
-    height: 200px;
-    background-color: #2cd712;
-    /* position: relative;
-    left: 100px; */
-
-    /* position: absolute;
-    top:10px;
-    left:10px; */
-
-    /* position: fixed;
-    top:10px;
-    left:10px; */
-
-
+@media only screen and (max-width: 1024px) {
+  .our-menu {
+    padding: 60px 16px;
+    .our-menu__content {
+      padding: 0;
+      grid-template-columns: 1fr;
+      
+      .our-menu__content-card {
+        .our-menu__content-card-heading {
+          align-items: flex-start;
+        }
+      }
+    }
   }
 }
